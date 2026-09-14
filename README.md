@@ -23,6 +23,20 @@ O formulário prepara assunto e corpo de um e-mail, abre o aplicativo de e-mail 
 
 Nome e empresa são opcionais. O texto do projeto é obrigatório. Sem JavaScript, os canais diretos e a navegação continuam acessíveis, e o formulário orienta o uso do e-mail direto.
 
+## SEO e Acessibilidade
+
+O site segue estas práticas:
+
+- **robots.txt**: Remove `Allow: /` desnecessário, controla crawlers
+- **sitemap.xml**: Lista `/oferta/` para indexação (temporariamente bloqueada)
+- **noindex /oferta**: Bloqueio temporário enquanto pricing é finalizado
+
+O TODO comment em `/oferta/index.html` documenta esta decisão:
+
+```
+<!-- TODO: remove noindex and add /oferta to sitemap.xml once pricing is finalized -->
+```
+
 ## Estrutura
 
 - `index.html`: marca, soluções, produto, método, princípios, FAQ e contato.
